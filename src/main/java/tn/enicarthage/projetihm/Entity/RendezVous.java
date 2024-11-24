@@ -1,3 +1,12 @@
+package tn.enicarthage.projetihm.Entity;
+import jakarta.persistence.*;
+import org.springframework.stereotype.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class RendezVous {
 
@@ -22,7 +31,12 @@ public class RendezVous {
         this.personne = personne;
     }
 
-    // Getters and setters
+    public void setPersonne(Personne personne) {
 
-    // ...
+    }
+
+
+    public String getMotif() {
+        return  this.motif;
+    }
 }

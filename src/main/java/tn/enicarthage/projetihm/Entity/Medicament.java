@@ -1,3 +1,12 @@
+package tn.enicarthage.projetihm.Entity;
+import jakarta.persistence.*;
+import org.springframework.stereotype.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Medicament {
 
@@ -22,6 +31,13 @@ public class Medicament {
         this.posologie = posologie;
         this.heurePrise = heurePrise;
         this.personne = personne;
+    }
+
+    public void setPersonne(Personne personne) {
+    }
+
+    public String getNom() {
+        return  this.nom;
     }
 
 
